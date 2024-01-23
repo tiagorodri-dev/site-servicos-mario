@@ -20,9 +20,12 @@
 
     <header>
         <img src="assets/logo-header.png" class="logo-header">
-        <a>Home</a>
-        <a onclick="showForm()">Fale conosco</a>
-        <a>Nossos serviços</a>
+        <div class="links">
+            <a>Home</a>
+            <a>Nossos serviços</a>
+            <a>Sobre nós</a>
+            <a onclick="showForm()">Fale conosco</a>
+        </div>
     </header>
 
     <div class="container">
@@ -53,6 +56,7 @@
         <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="assets/whatsapp.png" alt="logo-whatsapp"></a>            
         
         <form action="#" method="POST" class="fale-conosco">
+            <h2>Preencha os dados abaixo</h2>
             <input type="text" name="name" placeholder="Seu nome" required>
             <input type="text" name="email" placeholder="Seu e-mail" required>
             <textarea type="text" name="problem" placeholder="Digite seu problema"></textarea>
