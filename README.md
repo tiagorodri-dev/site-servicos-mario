@@ -17,6 +17,13 @@ https://site-servicos-mario.vercel.app/
 </ul>
 
 ## Versões
-<li>Desktop:</li>
-<li>Tablet:</li>
-<li>Mobile:</li>
+<div>
+  <li>Desktop:</li> <br>
+  <img src=""><br><br><br>
+
+  <li>Mobile:</li> <br>
+  <img src=""> <br><br><br>
+
+  <li>Tablet:</li> <br>
+  <img src="">
+</div>
