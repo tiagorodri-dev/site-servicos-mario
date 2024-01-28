@@ -53,12 +53,17 @@
         </div>
 
         <img src="assets/marioeluigi.png" class="marioeluigi">
-        <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="assets/whatsapp.png" alt="logo-whatsapp"></a>            
+        <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="assets/whatsapp.png" alt="logo-whatsapp"></a>
         
         <form action="#" method="POST" class="fale-conosco">
             <h2>Preencha os dados abaixo</h2>
             <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="text" name="email" placeholder="Seu e-mail" required>
+            <input type="text" name="email" placeholder="Seu e-mail" required>            
+            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" value="" size="10" maxlength="9" onblur="buscarCEP(this.value);">
+            <input type="text" name="cidade" id="cidade">
+            <input type="text" name="uf" id="uf">
+            <input type="text" name="bairro" id="bairro">
+            <input type="text" name="rua" id="rua">
             <textarea type="text" name="problem" placeholder="Digite seu problema"></textarea>
             <button type="submit" class="orcamento">Pedir orçamento</button>
         </form>
