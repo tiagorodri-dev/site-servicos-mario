@@ -28,9 +28,10 @@ function chamada(conteudo){
         document.getElementById("bairro").value=(conteudo.bairro);
         document.getElementById("rua").value=(conteudo.logradouro);
     }
-    else 
+    else {
         limpar();
         alert("CEP não encontrado!");
+    }
 }
 
 function buscarCEP(valor) {
