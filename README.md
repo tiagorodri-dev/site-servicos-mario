@@ -6,9 +6,13 @@ https://site-servicos-mario.vercel.app/
 
 ## Funcionalidades
 <p>A aplicação tem como funcionalidade principal realizar o contato do cliente com o prestador de serviços. Tendo outras funcionalidades como:</p>
-<ul>
-  <li>Envio de informações de formulário via e-mail utilizando PHP</li>
+<ul>  
   <li>Localização de endereço do cliente através da integração com a API Via Cep</li>
+</ul>
+
+## Features futuras
+<ul>
+  <li>Enviar informações de formulário via e-mail utilizando PHP</li>  
 </ul>
 
 ## Pré-requisitos
