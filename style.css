@@ -2,169 +2,179 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mukta', sans-serif;
+    font-family: var(--fonte);
 }
 
-.mascara-form {
-    visibility: hidden;
-    transition: visibility 1s linear;
-    z-index: 3;
+:root {
+    --fonte: 'Mukta';
+}
+
+body {
+    height: 100vh;
+}
+
+.mascara-formulario {
     position: fixed;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
-header {
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 30px;
+    margin: 30px;
 }
 
-.links {
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;    
-}
-
-.links a {
-    margin: 0 15px 0 15px;
-}
-
-header a:hover {
-    color: #C51111;
-    transition: 0.5s color ease-in-out;
-}
-
-.logo-header {
-    height: 80px;
-    margin: 20px;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.background-video {
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-}
-
-.conteudo-video {
-    position: fixed;
-    top: 0;
-    height: auto;
-    width: auto;
-    min-width: 100%;
-    max-width: 100%;    
-}
-
-.mascara-video {
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-}
-
-.sobre-nos {
-    max-width: 40%;
-}
-
-.logo {
-    height: 200px;
-}
-
-p {
-    color: white;
-    font-size: 20px;
-}
-
-button {
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 0;
-    padding: 10px 0;
-    border-radius: 3px;
-    background-color: #C51111;
-    width: 200px;
-    height: 50px;
-    color: white;
-    cursor: pointer;
-    margin-top: 30px;
-}
-
-.marioeluigi {
-    height: 60%;
-}
-
-.whatsapp {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    cursor: pointer;
-}
-
-.whatsapp img {
+.header img {
     height: 60px;
 }
 
-.fale-conosco {
-    position: fixed;
-    top: 20%;
-    left: -350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    gap: 20px;    
-    transition: left 1s linear;
-    z-index: 4;
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.fale-conosco h2 {
+.header a:hover {
+    color: #C51111;    
+    transition: 0.5s ease-in-out;
+}
+
+.caixa-mae {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 100px;
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+.caixa-principal p {
+    color: white;
+}
+
+.logo-mario {
+    height: 200px;
+}
+
+.entre-em-contato {
+    color: white;
+    background-color: #C51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.entre-em-contato:hover {
+    color: black;
+    background-color: rgba(197, 17, 17, 0.7);
+    transition: 0.5s ease-in-out;
+}
+
+.imagem-mario-luigi {
+    height: 500px;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.formulario-fale-conosco {
+    background: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: fixed;
+    top: 15%;
+    left: -800px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formulario-fale-conosco h2 {
     text-align: center;
 }
 
-.orcamento {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+.dados-pai {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
 }
 
-input {
+label {
+    width: 100%;
+    font-weight: bold;
+}
+
+input {    
+    width: 100%;
     height: 40px;
     border-radius: 5px;
-    border: 1px solid gray;
     padding-left: 10px;
-    outline-color: #18D80F;
+    border: 1px solid gray;
+    /* outline-color: #18D80F; */
 }
 
 textarea {
-    height: 80px;
-    width: 300px;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    height: 100px;
     border-radius: 5px;
+    padding-left: 10px;
     border: 1px solid gray;
-    outline-color: #18D80F;
-    padding: 10px;
 }
 
-@media (max-width: 1000px) {
-    p {
-        display: none;
-    }
-
-    
+.pedir-orcamento {
+    margin: auto;
+    color: white;
+    background-color: #C51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
 }
+
+/* 
+top: 15% 
+left: 50%
+transform: translateX(-50%);
+*/

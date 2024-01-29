@@ -10,65 +10,93 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
-    <link rel="manifest" href="./icon/site.webmanifest">
+    <link rel="manifest" href="./icon/site.webmanifest">    
     <link rel="stylesheet" href="style.css">
     <title>Serviços do Mário e Luigi</title>
 </head>
 
 <body>
-    <div class="mascara-form" onclick="hideForm()"></div>
-
-    <header>
-        <img src="assets/logo-header.png" class="logo-header">
-        <div class="links">
-            <a>Home</a>
-            <a>Nossos serviços</a>
-            <a>Sobre nós</a>
-            <a onclick="showForm()">Fale conosco</a>
-        </div>
+    <div class="mascara-formulario"></div>
+    <header class="header">        
+        <img src="assets/logo-header.png" alt="logo mario">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>        
     </header>
 
-    <div class="container">
-
-        <div class="background-video">
-            <video loop autoplay muted class="conteudo-video">
-                <source src="assets/video.mp4">
-            </video>
-            <div class="mascara-video"></div>
-        </div>
-
-        <div class="sobre-nos">
-            <img src="assets/logo.png" class="logo" alt="logo mario bros">
-
-            <p>
-                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
-            </p>
-        
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="assets/logo.png" alt="logo mario bros" class="logo-mario">
+            <p>🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧</p>                            
             <p> Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
                 entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
-
-            <button onclick="showForm()">Entre em contato</button>
+    
+            <button class="entre-em-contato">Entre em contato</button>
         </div>
 
-        <img src="assets/marioeluigi.png" class="marioeluigi">
-        <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="assets/whatsapp.png" alt="logo-whatsapp"></a>
-        
-        <form action="#" method="POST" class="fale-conosco">
-            <h2>Preencha os dados abaixo</h2>
-            <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="text" name="email" placeholder="Seu e-mail" required>            
-            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" value="" size="10" maxlength="9" onblur="buscarCEP(this.value);">
-            <input type="text" name="cidade" id="cidade">
-            <input type="text" name="uf" id="uf">
-            <input type="text" name="bairro" id="bairro">
-            <input type="text" name="rua" id="rua">
-            <textarea type="text" name="problem" placeholder="Digite seu problema"></textarea>
-            <button type="submit" class="orcamento">Pedir orçamento</button>
-        </form>
+        <div>
+            <img src="assets/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+        </div>
+
     </div>
-        
-</body>
-<script src="script.js"></script>
+
+    <div class="caixa-video">
+        <video src="assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=5589994034021&text=Ol%C3%A1,%20quero%20ajuda%20dos%20irm%C3%A3os%20Mario!" target="_blank" class="link-whatsapp">
+        <img src="assets/whatsapp.png" alt="logo whatsapp">
+    </a>
+
+    <form action="#" method="POST" class="formulario-fale-conosco">
+        <h2>Preencha os dados abaixo</h2>
+        <hr>
+
+        <div class="dados-pai">
+            <div class="dados">
+                <label for="">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <!-- <div class="dados">
+                <label for="">E-mail:</label>
+                <input type="text" name="e-mail" id="e-mail" placeholder="Digite seu e-mail" required> 
+            </div> -->
+
+            <div class="dados">
+                <label for="">CEP:</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" size="10" maxlength="9" onblur="buscarCEP(this.value)" required>
+            </div>
+
+            <div class="dados">
+                <label for="">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+
+            <div class="dados">
+                <label for="">Estado:</label>
+                <input type="text" name="uf" id="uf" required>
+            </div>
+
+            <div class="dados">
+                <label for="">Bairro:</label>
+                <input type="text" name="bairro" id="bairro" required>
+            </div>
+
+            <div class="dados">
+                <label for="">Rua:</label>
+                <input type="text" name="rua" id="rua" required>
+            </div>
+
+        </div>
+
+        <textarea name="problema" id="problema" placeholder="Digite seu problema"></textarea>
+        <button class="pedir-orcamento">Pedir orçamento</button>
+    </form>
+  
+    <script src="script.js"></script>
+</body>    
 </html>
