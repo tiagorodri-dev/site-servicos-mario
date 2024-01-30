@@ -121,7 +121,7 @@ video {
     flex-direction: column;
     position: fixed;
     top: 15%;
-    left: -800px;
+    left: -100%;
     padding: 20px;
     border-radius: 5px;
 }

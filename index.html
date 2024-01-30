@@ -33,7 +33,7 @@
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
     
-            <button class="entre-em-contato">Entre em contato</button>
+            <button onclick="bot()" class="entre-em-contato">Entre em contato</button>
         </div>
 
         <div>
@@ -57,7 +57,7 @@
 
         <div class="dados-pai">
             <div class="dados">
-                <label for="">Nome:</label>
+                <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
             </div>
 
@@ -67,27 +67,27 @@
             </div> -->
 
             <div class="dados">
-                <label for="">CEP:</label>
+                <label for="cep">CEP:</label>
                 <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" size="10" maxlength="9" onblur="buscarCEP(this.value)" required>
             </div>
 
             <div class="dados">
-                <label for="">Cidade:</label>
+                <label for="cidade">Cidade:</label>
                 <input type="text" name="cidade" id="cidade" required>
             </div>
 
             <div class="dados">
-                <label for="">Estado:</label>
+                <label for="uf">Estado:</label>
                 <input type="text" name="uf" id="uf" required>
             </div>
 
             <div class="dados">
-                <label for="">Bairro:</label>
+                <label for="bairro">Bairro:</label>
                 <input type="text" name="bairro" id="bairro" required>
             </div>
 
             <div class="dados">
-                <label for="">Rua:</label>
+                <label for="rua">Rua:</label>
                 <input type="text" name="rua" id="rua" required>
             </div>
 
@@ -96,7 +96,8 @@
         <textarea name="problema" id="problema" placeholder="Digite seu problema"></textarea>
         <button class="pedir-orcamento">Pedir orçamento</button>
     </form>
-  
-    <script src="script.js"></script>
+    
 </body>    
+    <script src="script.js"></script>
+
 </html>
