@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
@@ -12,16 +13,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
     <link rel="manifest" href="./icon/site.webmanifest">    
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Serviços do Mário e Luigi</title>
 </head>
 
 <body>
-    <div class="mascara-formulario"></div>
+    <div class="mascara-formulario" onclick="retirarFormulario()"></div>
     <header class="header">        
         <img src="assets/logo-header.png" alt="logo mario">
         <a>Home</a>
         <a>Nossos Serviços</a>
-        <a>Fale Conosco</a>        
+        <a onclick="aparecerFormulario()">Fale Conosco</a>
     </header>
 
     <div class="caixa-mae">
@@ -33,10 +38,10 @@
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
     
-            <button onclick="bot()" class="entre-em-contato">Entre em contato</button>
+            <button onclick="aparecerFormulario()" class="entre-em-contato">Entre em contato</button>
         </div>
 
-        <div>
+        <div data-aos="fade-in" data-aos-duration="3000">
             <img src="assets/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
         </div>
 
@@ -51,7 +56,7 @@
         <img src="assets/whatsapp.png" alt="logo whatsapp">
     </a>
 
-    <form action="#" method="POST" class="formulario-fale-conosco">
+    <form action="https://formcarry.com/s/sSysZd2fm2L" method="POST" enctype="multipart/form-data" class="formulario-fale-conosco">
         <h2>Preencha os dados abaixo</h2>
         <hr>
 
@@ -94,10 +99,10 @@
         </div>
 
         <textarea name="problema" id="problema" placeholder="Digite seu problema"></textarea>
-        <button class="pedir-orcamento">Pedir orçamento</button>
+        <button class="pedir-orcamento" type="submit">Pedir orçamento</button>
     </form>
     
-</body>    
+</body>
+    
     <script src="script.js"></script>
-
 </html>

@@ -1,6 +1,27 @@
-function bot() {
-    alert("Botão clicado")
+AOS.init();
+
+const formulario = document.querySelector(".formulario-fale-conosco")
+const mascaraFormulario = document.querySelector(".mascara-formulario")
+
+function aparecerFormulario() {
+    formulario.style.left = "50%"
+    formulario.style.transform = "translateX(-50%)"
+    formulario.style.transition = "1.5s linear"
+    mascaraFormulario.style.visibility = "visible"    
 }
+
+function retirarFormulario() {
+    formulario.style.left = "-100%"
+    formulario.style.transform = "translateX(0)"
+    mascaraFormulario.style.visibility = "hidden"
+}
+// função para alterar a visibilidade do formulário
+// const entreContato = document.querySelector(".entre-em-contato");
+
+// entreContato.addEventListener('click', () => {
+//     entreContato.style
+//     console.log('botão clicado!')
+// });
 
 
 // Consumo da API Via Cep
