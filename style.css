@@ -127,10 +127,6 @@ video {
     border-radius: 5px;
 }
 
-.formulario-fale-conosco h2 {
-    text-align: center;
-}
-
 .dados-pai {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -190,8 +186,15 @@ textarea {
     }
 
     .caixa-principal {
-        
-        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    .caixa-principal p {
+        text-align: justify;
     }
 
     .caixa-mae {
@@ -207,7 +210,9 @@ textarea {
     }
 
     .formulario-fale-conosco {
-        width: 75%;                
+        width: 75%;
+        position: fixed;
+        top: 1%;
     }
 
     .dados-pai {
