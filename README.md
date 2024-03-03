@@ -27,6 +27,7 @@ As tecnologias utilizadas foram: HTML, CSS, Javascript, Git e Vercel.
   <li>Localização de endereço do cliente através da integração com a API Via Cep;</li>
   <li>Responsividade e adaptação de tela para dispositivos móveis.</li>
 </ul>
+<br>
 
 ## ✋ Pré-requisitos:
 <ul>
